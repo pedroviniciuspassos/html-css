@@ -4,8 +4,8 @@
 
 :root {
     --fonte-padrao: verdana , sans-serif;
-    --fonte-titulo: 'passion' , serif;
-    --fonte-cordel: 'sriracha' , cursive;
+    --fonte-titulo: 'Passion One' , serif;
+    --fonte-cordel: 'Sriracha' , cursive;
 }
 
 * {
@@ -13,21 +13,23 @@
     padding: 0px;
 }
 
-body {
-    background: white;
+html, body {
+    min-height: 100vh;
+    background: darkgray;
 }
 
 header {
     background: black;
     color: white;
-    padding: 45px;
+    padding: 50px;
 }
 
 header h1 {
     font-family: var(--fonte-titulo);
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
     margin-bottom: 10px;
+    font-variant: small-caps;
 }
 
 header p {
@@ -35,12 +37,43 @@ header p {
     text-align: center;
 }
 
-header > p > a {
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-header > p > a:hover {
+a:hover {
     text-decoration: underline;
 }
+
+section {
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: darkgray;
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background: black;
+    padding: 6px;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
