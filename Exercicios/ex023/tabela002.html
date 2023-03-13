@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray ;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 5px;
+            font-size: 1.5em;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{ 
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.estado {
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: red;
+        }
+
+        tbody > tr:nth-child(odd) {
+           background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Populão dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 89px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td clas="posicao" scop="row">1</td>
+                <td class="estado" scop="row">São Paulo</td>
+                <td class="num">46 024 937</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">2</td>
+                <td class="estado" scop="row">Minas Gerais</td>
+                <td class="num">20 732 660</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">3</td>
+                <td class="estado" scop="row">Rio de Janeiro</td>
+                <td class="num">16 615 526</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">4</td>
+                <td class="estado" scop="row">Bahia</td>
+                <td class="num">14 659 023</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">5</td>
+                <td class="estado" scop="row">Paraná</td>
+                <td class="num">11 835 379</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">6</td>
+                <td class="estado" scop="row">Rio Grande do Sul</td>
+                <td class="num">11 088 065</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">7</td>
+                <td class="estado" scop="row">Pernambuco</td>
+                <td class="num">9 051 113</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">8</td>
+                <td class="estado" scop="row">Ceará</td>
+                <td class="num">8 936 431</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">9</td>
+                <td class="estado" scop="row">Pará</td>
+                <td class="num">8 442 962</td>
+            </tr>
+            <tr>
+                <td clas="posicao" scop="row">10</td>
+                <td class="estado" scop="row">Santa Catarina</td>
+                <td class="num">7 762 154</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="r">TOTAL</th>
+                <td><br></td>
+                <td class="num"><strong>100 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
